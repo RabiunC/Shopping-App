@@ -1,0 +1,126 @@
+{
+"products":
+ [
+    {
+      "_id": 1,
+      "image": "assets/products/apl.jpg",
+      "name": "Apple",
+      "description": "Eat one every day to keep the doctor away!",
+      "cal": 12,
+      "price": 90,
+      "nutrients": {
+        "Carotenoid": 0,
+        "Vitamin C": 2,
+        "Folates": 0,
+        "Potassium": 1,
+        "Fiber": 2
+      }
+    },
+    {
+      "_id": 2,
+      "image": "assets/products/ban.jpg",
+      "name": "Avocado",
+      "description": "Guacamole anyone?",
+      "cal": 16,
+      "price": 90,
+      "nutrients": {
+        "Carotenoid": 0,
+        "Vitamin C": 1,
+        "Folates": 1,
+        "Potassium": 1,
+        "Fiber": 2
+      }
+    },
+    {
+      "_id": 3,
+      "image": "assets/products/ctp.jpg",
+      "name": "Cantaloupe",
+      "description": "Delicious and refreshing.",
+      "cal": 3,
+      "price": 50,
+      "nutrients": {
+        "Carotenoid": 4,
+        "Vitamin C": 4,
+        "Folates": 1,
+        "Potassium": 2,
+        "Fiber": 0
+      }
+    },
+    {
+      "_id": 4,
+      "image": "assets/products/fig.jpg",
+      "name": "Fig",
+      "description": "OK, not that nutritious, but sooo good!",
+      "cal": 10,
+      "price": 100,
+      "nutrients": {
+        "Carotenoid": 0,
+        "Vitamin C": 0,
+        "Folates": 1,
+        "Potassium": 2,
+        "Fiber": 0
+      }
+    },
+    {
+      "_id": 5,
+      "image": "assets/products/grf.jpg",
+      "name": "Grapefruit",
+      "description": "Pink or red, always healthy and delicious.",
+      "cal": 11,
+      "price": 50,
+      "nutrients": {
+        "Carotenoid": 4,
+        "Vitamin C": 4,
+        "Folates": 4,
+        "Potassium": 1,
+        "Fiber": 1
+      }
+    },
+    {
+      "_id": 6,
+      "image": "assets/products/grp.jpg",
+      "name": "Grape",
+      "description": "Wine is great, but grapes are even better.",
+      "cal": 8,
+      "price": 100,
+      "nutrients": {
+        "Carotenoid": 4,
+        "Vitamin C": 4,
+        "Folates": 4,
+        "Potassium": 1,
+        "Fiber": 1
+      }
+    },
+    {
+      "_id": 7,
+      "image": "assets/products/gua.jpg",
+      "name": "Guava",
+      "description": "Exotic, fragrant, tasty!",
+      "cal": 8,
+      "price": 50,
+      "nutrients": {
+        "Carotenoid": 4,
+        "Vitamin C": 4,
+        "Folates": 4,
+        "Potassium": 1,
+        "Fiber": 2
+      }
+    },
+    {
+      "_id": 8,
+      "image": "assets/products/kiw.jpg",
+      "name": "Kiwi",
+      "description": "These come from New Zealand.",
+      "cal": 14,
+      "price": 90,
+      "nutrients": {
+        "Carotenoid": 1,
+        "Vitamin C": 4,
+        "Folates": 0,
+        "Potassium": 2,
+        "Fiber": 2
+      }
+    }
+ ]
+}
+
