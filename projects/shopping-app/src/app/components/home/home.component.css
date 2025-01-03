@@ -1,0 +1,19 @@
+.content-box{
+    height: 75vh;
+    width: 75%;
+    position: fixed;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+.search{
+    padding: 10px 0px;
+}
+.search input{
+    width: 30vw;
+    height: 30px;
+    border-radius: 2px;
+    margin: 0 16px 0 60px;
+    padding: 0 10px;
+    font-style: oblique;
+}
