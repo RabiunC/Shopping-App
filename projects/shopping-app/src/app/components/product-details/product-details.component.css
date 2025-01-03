@@ -1,22 +1,22 @@
 .left{
     float: left;
-    margin-top: 10%;
+    margin-top: 6%;
+    width: 60%;
 }
 
 .right{
     float: right;
-    margin-top: 10%;    
+    margin-top: 11%;    
     width: 30%;
 }
 
-@media only screen and (min-width: 991px) and (max-width: 1199px){
+/*@media only screen and (min-width: 991px) and (max-width: 1199px){
     .right {
         float: none;
         margin: auto;
-        padding: 20px 20px;
     }
     .left{
         float: none;
         margin-top: 10%;
     }
-  }
+  }*/

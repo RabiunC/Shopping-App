@@ -1,13 +1,12 @@
 .content-box{
-    height: 75vh;
-    width: 75%;
-    position: fixed;
-    z-index: 1;
-    overflow-y: scroll;
+    height: 70vh;
+    width: 70%;
+    overflow-y: scroll;    
+    margin: auto;
 }
-
 .search{
-    padding: 10px 0px;
+    margin-left: 10%; 
+    padding: 20px 0px;
 }
 .search input{
     width: 30vw;
