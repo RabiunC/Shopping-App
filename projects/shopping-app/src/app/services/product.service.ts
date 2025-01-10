@@ -16,5 +16,9 @@ export class ProductService {
     return data.products;
   }
 
+  getbyId(id: any){
+    return data.products.filter((item) => item._id == id);
+  }
+
 
 }

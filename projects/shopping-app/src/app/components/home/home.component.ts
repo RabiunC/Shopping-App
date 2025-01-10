@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../../services/product.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -22,5 +23,5 @@ export class HomeComponent {
     })*/
     this.data = this.pService.getAllProducts();
   }
-
+  
 }
