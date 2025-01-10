@@ -30,7 +30,7 @@
               </th>
               <td>{{ item.name }}</td>
               <td>{{ item.price | currency : "$" }}</td>
-              <td><a href="" style="float: right">Add to Cart</a></td>
+              <td><a class="nav-link active" [routerLink]="['cart-details']"></a>Add to Cart</td>
             </tr>
           </tbody>
           <tfoot style="background-color: lightgray">
