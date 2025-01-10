@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { ProductService } from '../../services/product.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-details',
@@ -11,7 +12,11 @@ export class ProductDetailsComponent implements OnInit {
 
   _id: any;
   data: any;
-  constructor(private ar: ActivatedRoute, private pService: ProductService){}
+  constructor(private ar: ActivatedRoute, private pService: ProductService, private router: Router){}
+
+  back(){
+    this.router.navigateByUrl('/');
+  }
 
   ngOnInit(): void {
 

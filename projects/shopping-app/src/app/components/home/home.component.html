@@ -23,14 +23,14 @@
           <tbody>
             <tr *ngFor="let item of data | filter : filterby">
               <th scope="row">
-                <img [src]="item.image" /><a
+                <a
                   class="nav-link active"
                   [routerLink]="['product-details', item._id]"
-                ></a>
+                ><img [src]="item.image" /></a>
               </th>
               <td>{{ item.name }}</td>
               <td>{{ item.price | currency : "$" }}</td>
-              <td><a class="nav-link active" [routerLink]="['cart-details']"></a>Add to Cart</td>
+              <td><a class="nav-link active" style="float: right;" [routerLink]="['cart-details']">Add to Cart</a></td>
             </tr>
           </tbody>
           <tfoot style="background-color: lightgray">

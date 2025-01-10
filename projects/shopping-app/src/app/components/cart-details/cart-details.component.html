@@ -21,20 +21,12 @@
               <tbody style="text-align: center">
                 <tr>
                   <th scope="row">Folates</th>
-                  <td></td>
-                  <td></td>
-                  <td>x</td>
-                </tr>
-                <tr>
-                  <th scope="row">Potassium</th>
-                  <td></td>
-                  <td></td>
-                  <td>x</td>
-                </tr>
-                <tr>
-                  <th scope="row">Vitamin C</th>
-                  <td></td>
-                  <td></td>
+                  <td>
+                    <input type="text" style="width:80px; text-align: center;">
+                    <button type="button" style="background-color: green; color: white;" class="btn btn-link">+</button>
+                    <button type="button" style="background-color: gray; color: white;" class="btn btn-link">-</button>
+                  </td>
+                  <td></td>                  
                   <td>x</td>
                 </tr>
               </tbody>
@@ -50,7 +42,7 @@
           </div> 
 
           <div class="right">
-            <button class="btn btn-light btn-block" type="button">Back to Store</button>
+            <button class="btn btn-light btn-block" type="button" (click)="back()">Back to Store</button>
             <button class="btn btn-danger btn-block" type="button">Clear Cart</button>
           <br/>
           <br/>          
