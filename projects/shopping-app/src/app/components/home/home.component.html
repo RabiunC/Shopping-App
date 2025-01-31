@@ -21,16 +21,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let item of data | filter : filterby">
+            <tr *ngFor="let item of productList  | filter : filterby">
               <th scope="row">
                 <a
                   class="nav-link active"
-                  [routerLink]="['product-details', item._id]"
+                  [routerLink]="['product-details', item._id, {quantity:'{{item.quantity}}', price:'{{item.price}}'}]"
                 ><img [src]="item.image" /></a>
               </th>
               <td>{{ item.name }}</td>
               <td>{{ item.price | currency : "$" }}</td>
-              <td><a class="nav-link active" style="float: right;" [routerLink]="['cart-details']">Add to Cart</a></td>
+              <td><a style="text-decoration: underline; color: blue; cursor:grab;" (click)="addToCart(item)">Add to Cart</a></td>
             </tr>
           </tbody>
           <tfoot style="background-color: lightgray">
