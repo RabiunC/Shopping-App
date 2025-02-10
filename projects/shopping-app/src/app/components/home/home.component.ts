@@ -13,11 +13,13 @@ export class HomeComponent {
   productList : any = [];
   filterby: any = '';
   quantity: number = 0;
+  grandTotal: number = 0;
 
   constructor(private pService: ProductService, private cService: CartService){}
 
   addToCart(item: any){
       this.cService.addToCart(item);
+      this.grandTotal = this.cService.getTotalPrice();
   }  
 
   ngOnInit(): void {    

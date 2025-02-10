@@ -29,6 +29,9 @@ export class CartDetailsComponent implements OnInit{
   decrementQauntity(item: any){
     this.cService.removeCartItem(item);
   }
+  deleteItem(id: any) {
+    this.cService.deleteItem(id);
+  }
                       
   ngOnInit(){
     this.cService.getProducts().subscribe((res) => {
@@ -44,7 +47,7 @@ export class CartDetailsComponent implements OnInit{
     });
     /*this.productList.forEach((item: any) => {
           Object.assign(item, {quantity: 1, totalPrice: item.price});          
-        });*/
+      });*/
   }
   
 }

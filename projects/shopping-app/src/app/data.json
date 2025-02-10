@@ -19,7 +19,7 @@
     {
       "_id": 2,
       "image": "assets/products/ban.jpg",
-      "name": "Avocado",
+      "name": "Banana",
       "description": "Guacamole anyone?",
       "cal": 16,
       "price": 90,
@@ -122,6 +122,7 @@
       }
     }
  ]
+
 }
 
 

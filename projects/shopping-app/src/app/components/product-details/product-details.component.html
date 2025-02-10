@@ -13,9 +13,14 @@
                 <tr>
                   <th scope="row"></th>
                   <td colspan="2"></td>
-                  <td style="text-align: center;">6 Items $0.00 
-                    <br />
-                    ( this item is in the cart )</td>
+                  <td style="text-align: center;">
+                    <a href="cart-details">
+                      <i style="font-size: 17px;" class="fas fa-cart-plus"></i>
+                      <strong>{{totalItems}}</strong> Items ${{grandTotal}}.00 
+                      <br />                    
+                    </a>
+                    <div *ngIf="elem">( this item is in the cart )</div>                    
+                  </td>
                 </tr>
               </thead>
               <tbody style="text-align: center">
@@ -54,15 +59,21 @@
                 <tr>
                   <th scope="row"></th>
                   <td colspan="2"></td>
-                  <td>(Tot No:) items: $.00<p>This item is in the cart</p></td>
+                  <td style="text-align: center;">
+                    <a href="cart-details">
+                    <i style="font-size: 17px;" class="fas fa-cart-plus"></i>
+                    <strong>{{totalItems}}</strong> Items ${{grandTotal}}.00 
+                    <br />
+                    </a>
+                  </td>
                 </tr>
               </tfoot>
             </table>                                
           </div> 
 
           <div class="right">
-            <button class="btn btn-success btn-block" type="button">Add To Cart</button>
-            <button class="btn btn-danger btn-block" type="button">Delete from Cart</button>
+            <button class="btn btn-success btn-block" type="button" (click)="incrementQauntity(details)">Add To Cart</button>
+            <button class="btn btn-danger btn-block" type="button" (click)="deleteItem(details._id)">Remove from Cart</button>
             <button class="btn btn-light btn-block" type="button" (click)="back()">Back to Store</button>
           </div>
         

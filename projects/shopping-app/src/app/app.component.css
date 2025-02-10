@@ -1,7 +1,6 @@
 header{
     height: 4%;
     font-family: Roboto;
-    font-weight: 200;
     background: var(--main-bg-color);
 }
 footer {
@@ -13,6 +12,5 @@ footer {
     background-color:#b2cfd6;
     color: rgb(0, 0, 0);
     text-align: center;
-    font-family: Roboto;    
-    font-weight: 400;
+    font-family: Roboto;
 }

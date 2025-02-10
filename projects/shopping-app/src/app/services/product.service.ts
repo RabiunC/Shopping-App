@@ -9,6 +9,15 @@ import { of } from 'rxjs';
 })
 export class ProductService {
     
+  dvaCaption = ["Negligible", "Low", "Average","Good", "Great"];
+  dvaRange = [
+    "below 5%",
+    "between 5 and 10%",
+    "between 10 and 20%",
+    "between 20 and 40%",
+    "above 40%"
+  ];
+
   constructor(private http: HttpClient) { }
 
    getAllProducts(){

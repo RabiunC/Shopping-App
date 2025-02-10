@@ -53,6 +53,13 @@ export class CartService {
     this.productList.next(this.cartItemList);
     this.getTotalPrice();    
   }
+
+  deleteItem(id: any){
+    const idx = this.cartItemList.findIndex((item: any) => item._id === id);
+    this.cartItemList.splice(idx, 1); 
+    this.productList.next(this.cartItemList);
+    this.getTotalPrice();  
+  }
   
   getTotalPrice(): number{
     let grandTotal = 0;
