@@ -18,15 +18,11 @@ export class HomeComponent {
 
   addToCart(item: any){
       this.cService.addToCart(item);
-  }
+  }  
 
   ngOnInit(): void {    
     this.pService.getAllProducts().subscribe((res) => {
-        this.productList = res;
-        //console.log(this.data);
-        this.productList.forEach((item: any) => {
-          Object.assign(item, {quantity: 1, totalPrice: item.price});          
-        });
+        this.productList = res;        
     })
   }
   

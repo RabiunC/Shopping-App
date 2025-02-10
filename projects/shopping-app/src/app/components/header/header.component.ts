@@ -6,15 +6,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit {
 
   constructor(private cService: CartService){}
-
   public totalItem: number = 0;
   
-  ngOnInit(){
-    this.cService.getProducts().subscribe((res) => {
-        this.totalItem = res.length;    
+  ngOnInit() {
+    this.cService.getProducts().subscribe((res) => {       
+      this.totalItem =  res.reduce((acc: any, curr: any) => {
+        return acc + curr.quantity;
+      }, 0)
     });
   
   }

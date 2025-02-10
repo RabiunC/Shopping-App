@@ -19,22 +19,22 @@
                 </tr>
               </thead>
               <tbody style="text-align: center">
-                <tr>
-                  <th scope="row">Folates</th>
+                <tr *ngFor="let item of cartProductList">
+                  <th scope="row">{{item.name}}</th>
                   <td>
-                    <input type="text" style="width:80px; text-align: center;">
-                    <button type="button" style="background-color: green; color: white;" class="btn btn-link">+</button>
-                    <button type="button" style="background-color: gray; color: white;" class="btn btn-link">-</button>
+                    <input type="text" style="width:80px; text-align: center;" [(ngModel)]="item.quantity">
+                    <button type="button" style="background-color: green; color: white;" class="btn btn-link" (click)="incrementQauntity(item)">+</button>
+                    <button type="button" style="background-color: gray; color: white;" class="btn btn-link" (click)="decrementQauntity(item)">-</button>
                   </td>
-                  <td></td>                  
+                  <td>{{item.itemTotalPrice}}</td>                  
                   <td>x</td>
                 </tr>
               </tbody>
               <tfoot style="background-color: lightgray; text-align: center;">
                 <tr>
                   <th scope="row">Total</th>
-                  <td>3</td>
-                  <td>$.00</td>
+                  <td>{{totalItems}}</td>
+                  <td>${{grandTotal}}</td>
                   <td></td>
                 </tr>
               </tfoot>
@@ -43,7 +43,7 @@
 
           <div class="right">
             <button class="btn btn-light btn-block" type="button" (click)="back()">Back to Store</button>
-            <button class="btn btn-danger btn-block" type="button">Clear Cart</button>
+            <button class="btn btn-danger btn-block" type="button" (click)="clearCart()">Clear Cart</button>
           <br/>
           <br/>          
             <button class="btn btn-primary btn-block" type="button">Checkout Using PayPal</button>
