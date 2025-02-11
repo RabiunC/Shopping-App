@@ -38,14 +38,11 @@ export class ProductDetailsComponent implements OnInit {
       this.data = this.pService.getbyId(this.id);
       //console.log(JSON.stringify(this.data));
 
-      this.cService.getProducts().subscribe((res) => {        
-        
-        const item = res.filter((item: any) => this.id === item._id);
-        if(item){
+      this.cService.getProducts().subscribe((res) => {   
+        const item = res.filter((item: any) => item._id == this.id);
+        if(item.length !== 0){
           this.elem = true;
-          //alert(this.elem);
         }
-
         this.totalItems = res.reduce((acc: any, curr: any) => {
           return acc + curr.quantity;
         }, 0);

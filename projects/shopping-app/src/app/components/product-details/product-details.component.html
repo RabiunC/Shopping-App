@@ -72,9 +72,12 @@
           </div> 
 
           <div class="right">
-            <button class="btn btn-success btn-block" type="button" (click)="incrementQauntity(details)">Add To Cart</button>
-            <button class="btn btn-danger btn-block" type="button" (click)="deleteItem(details._id)">Remove from Cart</button>
-            <button class="btn btn-light btn-block" type="button" (click)="back()">Back to Store</button>
+            <button class="btn btn-success btn-block" type="button" (click)="incrementQauntity(details)">
+              <i style="font-size: 17px;" class="fas fa-cart-plus"></i> Add To Cart</button>
+            <button class="btn btn-danger btn-block" type="button" (click)="deleteItem(details._id)">
+              <i style="font-size: 17px;" class="fa-solid fa-trash"></i> Remove from Cart</button>
+            <button class="btn btn-light btn-block" type="button" (click)="back()">
+              <i style="font-size: 17px;" class="fa-solid fa-angles-left"></i> Back to Store</button>
           </div>
         
       </div>
