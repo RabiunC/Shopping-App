@@ -23,6 +23,7 @@
                   </td>
                 </tr>
               </thead>
+
               <tbody style="text-align: center">
                 <tr>
                   <th scope="row">Calories</th>
@@ -31,30 +32,31 @@
                 </tr>
                 <tr>
                   <th scope="row">Carotenoid</th>
-                  <td>{{details.nutrients.Carotenoid}}</td>
+                  <td><img [src]="details.nutrients.cimage"></td>
                   <td colspan="2">Otto</td>
                 </tr>
                 <tr>
                   <th scope="row">Fiber</th>
-                  <td>{{details.nutrients.Fiber}}</td>
+                  <td><img [src]="details.nutrients.fiimage"></td>
                   <td colspan="2">Otto</td>
                 </tr>
                 <tr>
                   <th scope="row">Folates</th>
-                  <td>{{details.nutrients.Folates}}</td>
+                  <td><img [src]="details.nutrients.foimage"></td>
                   <td colspan="2">Otto</td>
                 </tr>
                 <tr>
                   <th scope="row">Potassium</th>
-                  <td>{{details.nutrients.Potassium}}</td>
+                  <td><img [src]="details.nutrients.pimage"></td>
                   <td colspan="2">Otto</td>
                 </tr>
                 <tr>
                   <th scope="row">Vitamin C</th>
-                  <td>{{details.nutrients.VitaminC}}</td>
-                  <td colspan="2">Otto</td>
+                  <td><img [src]="details.nutrients.vimage"></td>
+                  <td colspan="2"><strong>{{details.nutrients.remarks}}:{{details.nutrients.vcontent}}</strong></td>
                 </tr>
               </tbody>
+
               <tfoot style="background-color: lightgray">
                 <tr>
                   <th scope="row"></th>
