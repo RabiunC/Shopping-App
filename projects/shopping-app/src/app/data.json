@@ -9,9 +9,9 @@
       "cal": 12,
       "price": 90,
       "nutrients": {
-        "Carotenoid": 0,
+        "Carotenoid": "0",
         "VitaminC": 2,
-        "Folates": 0,
+        "Folates": "0",
         "Potassium": 1,
         "Fiber": 2
       }
@@ -24,7 +24,7 @@
       "cal": 16,
       "price": 90,
       "nutrients": {
-        "Carotenoid": 0,
+        "Carotenoid": "0",
         "VitaminC": 1,
         "Folates": 1,
         "Potassium": 1,
@@ -43,7 +43,7 @@
         "VitaminC": 4,
         "Folates": 1,
         "Potassium": 2,
-        "Fiber": 0
+        "Fiber": "0"
       }
     },
     {
@@ -54,11 +54,11 @@
       "cal": 10,
       "price": 100,
       "nutrients": {
-        "Carotenoid": 0,
-        "VitaminC": 0,
+        "Carotenoid": "0",
+        "VitaminC": "0",
         "Folates": 1,
         "Potassium": 2,
-        "Fiber": 0
+        "Fiber": "0"
       }
     },
     {
@@ -116,7 +116,7 @@
       "nutrients": {
         "Carotenoid": 1,
         "VitaminC": 4,
-        "Folates": 0,
+        "Folates": "0",
         "Potassium": 2,
         "Fiber": 2
       }

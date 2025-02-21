@@ -45,7 +45,8 @@ export class ProductDetailsComponent implements OnInit {
       this.id = params.get('id');
       //console.log(this.id);
       this.data = this.pService.getbyId(this.id);
-      console.log("Original data", this.data);
+
+      //console.log("Original data", this.data);
       this.filteringNutrientsbyVal(this.data[0].nutrients);
 
       console.log("After Object Assigned", this.data);
@@ -67,87 +68,87 @@ export class ProductDetailsComponent implements OnInit {
      
     if(nutrientsObj.Carotenoid){
         if(nutrientsObj.Carotenoid == 0){      
-          Object.assign(nutrientsObj, {cimage: "assets/r0.png"});
+          Object.assign(nutrientsObj, {cimage: "assets/r0.png", cremarks: DVACAPTION[0], ccontent: this.NEGLIGIBLE });
         }
         else if(nutrientsObj.Carotenoid == 1){ 
-          Object.assign(nutrientsObj, {cimage: "assets/r1.png"});    
+          Object.assign(nutrientsObj, {cimage: "assets/r1.png", cremarks: DVACAPTION[1], ccontent: this.LOW });    
         }
         else if(nutrientsObj.Carotenoid == 2){ 
-          Object.assign(nutrientsObj, {cimage: "assets/r2.png"});    
+          Object.assign(nutrientsObj, {cimage: "assets/r2.png", cremarks: DVACAPTION[2], ccontent: this.AVERAGE });    
         }
         else if(nutrientsObj.Carotenoid == 3){ 
-          Object.assign(nutrientsObj, {cimage: "assets/r3.png"});    
+          Object.assign(nutrientsObj, {cimage: "assets/r3.png", cremarks: DVACAPTION[3], ccontent: this.GOOD });   
         }
         else if(nutrientsObj.Carotenoid == 4){ 
-          Object.assign(nutrientsObj, {cimage: "assets/r4.png"});    
+          Object.assign(nutrientsObj, {cimage: "assets/r4.png", cremarks: DVACAPTION[4], ccontent: this.GREAT });    
         }
       }
     if(nutrientsObj.VitaminC){
       if(nutrientsObj.VitaminC == 0){      
-          Object.assign(nutrientsObj, {vimage: "assets/r0.png", remarks: DVACAPTION[0], vcontent: this.NEGLIGIBLE});
+          Object.assign(nutrientsObj, {vimage: "assets/r0.png", vremarks: DVACAPTION[0], vcontent: this.NEGLIGIBLE});
         }
         else if(nutrientsObj.VitaminC == 1){ 
-          Object.assign(nutrientsObj, {vimage: "assets/r1.png", remarks: DVACAPTION[1], vcontent: this.LOW});    
+          Object.assign(nutrientsObj, {vimage: "assets/r1.png", vremarks: DVACAPTION[1], vcontent: this.LOW});    
         }
         else if(nutrientsObj.VitaminC == 2){ 
-          Object.assign(nutrientsObj, {vimage: "assets/r2.png", remarks: DVACAPTION[2], vcontent: this.AVERAGE});    
+          Object.assign(nutrientsObj, {vimage: "assets/r2.png", vremarks: DVACAPTION[2], vcontent: this.AVERAGE});    
         }
         else if(nutrientsObj.VitaminC == 3){ 
-          Object.assign(nutrientsObj, {vimage: "assets/r3.png", remarks: DVACAPTION[3], vcontent: this.GOOD});    
+          Object.assign(nutrientsObj, {vimage: "assets/r3.png", vremarks: DVACAPTION[3], vcontent: this.GOOD});    
         }
         else if(nutrientsObj.VitaminC == 4){ 
-          Object.assign(nutrientsObj, {vimage: "assets/r4.png", remarks: DVACAPTION[4], vcontent: this.GREAT});    
+          Object.assign(nutrientsObj, {vimage: "assets/r4.png", vremarks: DVACAPTION[4], vcontent: this.GREAT});    
         }
       }
     if(nutrientsObj.Folates){
         if(nutrientsObj.Folates == 0){      
-          Object.assign(nutrientsObj, {foimage: "assets/r0.png"});
+          Object.assign(nutrientsObj, {foimage: "assets/r0.png", foremarks: DVACAPTION[0], focontent: this.NEGLIGIBLE});
         }
         else if(nutrientsObj.Folates == 1){ 
-          Object.assign(nutrientsObj, {foimage: "assets/r1.png"});    
+          Object.assign(nutrientsObj, {foimage: "assets/r1.png", foremarks: DVACAPTION[1], focontent: this.LOW});   
         }
         else if(nutrientsObj.Folates == 2){ 
-          Object.assign(nutrientsObj, {foimage: "assets/r2.png"});    
+          Object.assign(nutrientsObj, {foimage: "assets/r2.png", foremarks: DVACAPTION[2], focontent: this.AVERAGE});    
         }
         else if(nutrientsObj.Folates == 3){ 
-          Object.assign(nutrientsObj, {foimage: "assets/r3.png"});    
+          Object.assign(nutrientsObj, {foimage: "assets/r3.png", foremarks: DVACAPTION[3], focontent: this.GOOD});    
         }
         else if(nutrientsObj.Folates == 4){ 
-          Object.assign(nutrientsObj, {foimage: "assets/r4.png"});    
+          Object.assign(nutrientsObj, {foimage: "assets/r4.png", foremarks: DVACAPTION[4], focontent: this.GREAT});    
         }
       }
     if(nutrientsObj.Potassium){
         if(nutrientsObj.Potassium == 0){      
-        Object.assign(nutrientsObj, {pimage: "assets/r0.png"});
+          Object.assign(nutrientsObj, {pimage: "assets/r0.png", premarks: DVACAPTION[0], pcontent: this.NEGLIGIBLE });
         }
         else if(nutrientsObj.Potassium == 1){ 
-          Object.assign(nutrientsObj, {pimage: "assets/r1.png"});    
+          Object.assign(nutrientsObj, {pimage: "assets/r1.png", premarks: DVACAPTION[1], pcontent: this.LOW });    
         }
         else if(nutrientsObj.Potassium == 2){ 
-          Object.assign(nutrientsObj, {pimage: "assets/r2.png"});    
+          Object.assign(nutrientsObj, {pimage: "assets/r2.png", premarks: DVACAPTION[2], pcontent: this.AVERAGE });    
         }
         else if(nutrientsObj.Potassium == 3){ 
-          Object.assign(nutrientsObj, {pimage: "assets/r3.png"});    
+          Object.assign(nutrientsObj, {pimage: "assets/r3.png", premarks: DVACAPTION[3], pcontent: this.GOOD });   
         }
         else if(nutrientsObj.Potassium == 4){ 
-          Object.assign(nutrientsObj, {pimage: "assets/r4.png"});    
+          Object.assign(nutrientsObj, {pimage: "assets/r4.png", premarks: DVACAPTION[4], pcontent: this.GREAT });    
         }
       }
     if(nutrientsObj.Fiber){
         if(nutrientsObj.Fiber == 0){      
-        Object.assign(nutrientsObj, {fiimage: "assets/r0.png"});
+          Object.assign(nutrientsObj, {fiimage: "assets/r0.png", firemarks: DVACAPTION[0], ficontent: this.NEGLIGIBLE });
         }
         else if(nutrientsObj.Fiber == 1){ 
-          Object.assign(nutrientsObj, {fiimage: "assets/r1.png"});    
+          Object.assign(nutrientsObj, {fiimage: "assets/r1.png", firemarks: DVACAPTION[1], ficontent: this.LOW });    
         }
         else if(nutrientsObj.Fiber == 2){ 
-          Object.assign(nutrientsObj, {fiimage: "assets/r2.png"});    
+          Object.assign(nutrientsObj, {fiimage: "assets/r2.png", firemarks: DVACAPTION[2], ficontent: this.AVERAGE });    
         }
         else if(nutrientsObj.Fiber == 3){ 
-          Object.assign(nutrientsObj, {fiimage: "assets/r3.png"});    
+          Object.assign(nutrientsObj, {fiimage: "assets/r3.png", firemarks: DVACAPTION[3], ficontent: this.GOOD });    
         }
         else if(nutrientsObj.Fiber == 4){ 
-          Object.assign(nutrientsObj, {fiimage: "assets/r4.png"});    
+          Object.assign(nutrientsObj, {fiimage: "assets/r4.png", firemarks: DVACAPTION[4], ficontent: this.GREAT });   
         }
       }
 

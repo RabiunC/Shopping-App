@@ -27,33 +27,33 @@
               <tbody style="text-align: center">
                 <tr>
                   <th scope="row">Calories</th>
-                  <td><strong>{{details.cal}}</strong></td>
+                  <td style="font-size: 2em">{{details.cal}}</td>
                   <td colspan="2"></td>
                 </tr>
                 <tr>
                   <th scope="row">Carotenoid</th>
                   <td><img [src]="details.nutrients.cimage"></td>
-                  <td colspan="2">Otto</td>
+                  <td colspan="2"><strong>{{details.nutrients.cremarks}}</strong>&nbsp;:{{details.nutrients.ccontent}}</td>
                 </tr>
                 <tr>
                   <th scope="row">Fiber</th>
                   <td><img [src]="details.nutrients.fiimage"></td>
-                  <td colspan="2">Otto</td>
+                  <td colspan="2"><strong>{{details.nutrients.firemarks}}</strong>&nbsp;:{{details.nutrients.ficontent}}</td>
                 </tr>
                 <tr>
                   <th scope="row">Folates</th>
                   <td><img [src]="details.nutrients.foimage"></td>
-                  <td colspan="2">Otto</td>
+                  <td colspan="2"><strong>{{details.nutrients.foremarks}}</strong>&nbsp;:{{details.nutrients.focontent}}</td>
                 </tr>
                 <tr>
                   <th scope="row">Potassium</th>
                   <td><img [src]="details.nutrients.pimage"></td>
-                  <td colspan="2">Otto</td>
+                  <td colspan="2"><strong>{{details.nutrients.premarks}}</strong>&nbsp;:{{details.nutrients.pcontent}}</td>
                 </tr>
                 <tr>
                   <th scope="row">Vitamin C</th>
                   <td><img [src]="details.nutrients.vimage"></td>
-                  <td colspan="2"><strong>{{details.nutrients.remarks}}:{{details.nutrients.vcontent}}</strong></td>
+                  <td colspan="2"><strong>{{details.nutrients.vremarks}}</strong>&nbsp;:{{details.nutrients.vcontent}}</td>
                 </tr>
               </tbody>
 
